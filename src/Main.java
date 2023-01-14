@@ -6,7 +6,7 @@ public class Main {
         Boss boss =new Boss(500, 50, "Magical");
         System.out.println("Босс \nхарактеристики:");
         System.out.println("Здоровье: " + boss.getHealth() + "\nУрон:  " + boss.getDamage() + "\nЗащита: " + boss.getProtection());
-
+        System.out.println();
         System.out.println("Герои \nХарактеристики:");
         createHeroes();
 
@@ -21,6 +21,7 @@ public class Main {
         for (int i = 0; i < heroes.length; i++) {
             System.out.println("Имя: " + heroes[i].getName() + "\nЗдоровье: " + heroes[i].getHealth() + "\nУрон: " +
             heroes[i].getDamage() + "\nСуперспособность: " + heroes[i].getSuperPower());
+            System.out.println();
         }
     }
 }
